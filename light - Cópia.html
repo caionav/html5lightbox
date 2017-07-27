@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<link href"https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js" type="text/javascript" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.css" rel="stylesheet" type="text/css" />
+
+  <script>
+$(this).ekkoLightbox({
+    alwaysShowClose: true,
+    onShown: function() {
+        console.log('Checking our the events huh?');
+    },
+    onNavigate: function(direction, itemIndex) {
+        console.log('Navigating '+direction+'. Current item: '+itemIndex);
+    }
+    ...
+});
+  </script>
+</head>
+<body>
+
+<a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
+    <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+</a>
+
+
+</body>
+</html>
